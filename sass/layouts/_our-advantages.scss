@@ -1,0 +1,46 @@
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+// Стилизирует h2-заголовки секции с преимуществами студии
+.advantages-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantages-item {
+  width: 270px;
+}
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages-icon-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: $light-background-color;
+  border-radius: 4px;
+}
+// Стилизирует описание секции с преимуществами студии
+.advantages-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+}

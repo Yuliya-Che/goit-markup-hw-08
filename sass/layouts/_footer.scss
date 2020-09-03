@@ -1,0 +1,64 @@
+// Добавляет фон в подвале страницы
+.page-footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+}
+.footer-container > div:not(:last-child) {
+  width: calc((50% - 45px) / 2);
+  margin-right: 30px;
+}
+.footer-container > div:last-child {
+  width: calc(50% - 15px);
+}
+.logo-address {
+  display: block;
+}
+// Убирает курсив в адресе
+address {
+  font-style: normal;
+}
+.address {
+  margin-top: 14px;
+}
+// Стилизирует адрес студии в подвале страницы
+.address-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $total-white;
+}
+// Стилизирует контакты студии в подвале страницы
+.address-contact > a {
+  display: block;
+  margin-top: 9px;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+// Стилизирует призыв к действию в подвале страницы
+.join-title,
+.subscribe-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $total-white;
+}
+.join-us,
+.subscribe {
+  align-items: baseline;
+}
+.footer > div:last-child {
+  width: calc(50% - 15px);
+}

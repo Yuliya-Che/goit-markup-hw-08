@@ -1,0 +1,15 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.contact-list {
+  margin-left: auto;
+}
+.menu-list {
+  display: flex;
+  margin-left: 85px;
+
+  & .item + .item {
+    margin-left: 50px;
+  }
+}

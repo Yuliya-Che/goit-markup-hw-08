@@ -1,0 +1,50 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+// Добавляет глобальный border-box
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+// Добавляет шрифт Roboto всей странице
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  background-color: $total-white;
+}
+// Добавляет размер секциям
+.container,
+.hero-container,
+.footer-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+// Убирает подчеркивание со всех ссылок на странице
+a {
+  text-decoration: none;
+}
+// Убирает буллетпоинты со списков страницы, обнуляет поля и отступы
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

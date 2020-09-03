@@ -1,0 +1,60 @@
+// Стилизирует иконки соцсетей членов команды
+.socials-list {
+  display: flex;
+  justify-content: center;
+}
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.social-icons-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: $svg-color;
+  background-color: $total-white;
+  border-radius: 50%;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    color: $total-white;
+    background-color: $accent-color;
+  }
+}
+.socials-item .social-icon {
+  fill: currentColor;
+}
+// Стилизирует соцсети Студии в подвале страницы
+.join-socials {
+  display: flex;
+  align-items: baseline;
+}
+.join-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.join-socials-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: $total-white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $total-white;
+    background-color: $accent-color;
+  }
+}
+.join-socials-link:active {
+  color: $total-white;
+}
+.join-socials .social-icon {
+  fill: currentColor;
+}
