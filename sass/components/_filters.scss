@@ -17,14 +17,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  @include for-size(tablet) {
-    justify-content: center;
-    margin: 0;
-  }
+  // @include for-size(tablet) {
+  //   justify-content: center;
+  //   margin: 0;
+  // }
 
   @media screen and (max-width: 767.9px) {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin: 0;
   }
 }
 
