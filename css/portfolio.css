@@ -1017,6 +1017,12 @@ textarea {
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 767.9px) {
   .projects-list {
     display: flex;
