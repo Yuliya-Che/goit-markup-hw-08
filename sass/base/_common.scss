@@ -12,7 +12,7 @@
 html {
   box-sizing: border-box;
   // Аутлайн для адаптивной верстки
-  outline: 2px solid tomato;
+  // outline: 2px solid tomato;
 }
 
 *,
@@ -20,7 +20,7 @@ html {
 *::after {
   box-sizing: inherit;
   // Аутлайн для адаптивной верстки
-  outline: 2px solid tomato;
+  // outline: 2px solid tomato;
 }
 // Добавляет шрифт Roboto всей странице
 body {
