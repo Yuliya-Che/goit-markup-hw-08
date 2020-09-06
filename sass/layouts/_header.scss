@@ -44,22 +44,23 @@ header {
 
 .mobmenu-button {
   display: inline-flex;
+  cursor: pointer;
 
   margin: 0;
   padding: 0;
   border: none;
 
   background-color: transparent;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
   .icon-mobmenu:hover,
   .icon-mobmenu:focus,
   .icon-close-mobmenu:hover,
   .icon-close-mobmenu:focus {
     fill: $accent-color;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
