@@ -1,33 +1,95 @@
-.hero-content {
-  max-width: 696px;
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-}
-// Добавляет задний фон секции для более легкого восприятия заголовка и кнопки
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  max-width: 1600px;
-  height: 600px;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/img-bg.jpg);
+  max-width: 1600px;
+  text-align: center;
+  background-color: $secondary-color;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
+
+@media screen and (max-width: 767.9px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero/hero-optim/mobile-optim/img-bg.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/hero/hero-optim/mobile-optim/img-bg@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero/hero-optim/tablet-optim/img-bg.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/hero/hero-optim/tablet-optim/img-bg@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero/hero-optim/desktop-optim/img-bg.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/hero/hero-optim/desktop-optim/img-bg@2x.jpg);
+    }
+  }
+}
+
+.hero-content {
+  @media screen and (max-width: 1199.9px) {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 // Стилизирует h1-заголовок страницы
 .page-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $total-white;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }

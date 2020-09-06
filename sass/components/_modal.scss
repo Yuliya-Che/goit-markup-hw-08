@@ -1,5 +1,6 @@
 //  Добавляет модальное окно
 .backdrop {
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -25,14 +26,13 @@
 }
 
 .modal {
+  z-index: 3;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
   width: 100%;
-  max-width: 528px;
-  height: 581px;
   background-color: $total-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -40,6 +40,12 @@
 
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 .btn-close {
   position: absolute;
@@ -52,7 +58,8 @@
   background-color: $total-white;
   outline: none;
   cursor: pointer;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $accent-color;
   }
 }
@@ -167,21 +174,31 @@
 }
 .checkbox-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $secondary-color;
   text-align: center;
-  margin-left: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox-text > a {
   display: inline-flexbox;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $accent-color;
   text-decoration: underline;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox-text::before {
   content: "";

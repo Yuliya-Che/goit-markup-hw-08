@@ -50,7 +50,16 @@
     color: $accent-color;
     background-color: $total-white;
   }
+  // @media screen and (max-width: 767px) {
+  //   display: inline-block;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   display: block;
+  //   align-items: center;
+  //   text-align: center;
+  // }
 }
+
 .icon-send {
   vertical-align: middle;
   width: 24px;

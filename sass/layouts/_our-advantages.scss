@@ -1,10 +1,17 @@
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-// Стилизирует h2-заголовки секции с преимуществами студии
+// Стилизирует h2-заголовок секции с преимуществами студии
 .advantages-title {
+  margin-bottom: 0px;
+  margin-right: 0px;
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -13,34 +20,53 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-color;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  margin-top: 30px;
 }
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
 }
-.advantages-item {
-  width: 270px;
+
+.advantages-list > li {
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
-.advantages-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .advantages-icon-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
   height: 120px;
   background-color: $light-background-color;
   border-radius: 4px;
 }
+
+.advantages-icon {
+  margin: auto;
+}
+
 // Стилизирует описание секции с преимуществами студии
 .advantages-description {
-  margin-top: 0;
-  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: $secondary-color;
+  margin-top: 10px;
 }

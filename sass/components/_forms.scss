@@ -1,13 +1,27 @@
 // Часть с формой подписки в футере
 .form-wrap {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  flex-wrap: wrap;
+
+  @include for-size(tablet) {
+    padding-top: 60px;
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
+
 .email-field {
   display: inline-block;
   outline: none;
 
-  min-width: 358px;
+  width: 100%;
+  max-width: 358px;
   height: 50px;
   padding-left: 16px;
   padding-right: 16px;
@@ -31,4 +45,8 @@
 }
 .email-field:not(:placeholder-shown) {
   border-color: $accent-color;
+}
+
+textarea {
+  resize: none;
 }

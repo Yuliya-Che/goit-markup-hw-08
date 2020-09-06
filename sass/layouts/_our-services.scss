@@ -1,8 +1,15 @@
 .services {
-  padding-bottom: 94px;
+  display: none;
 }
 
-// Стилизирует h2-заголовки секций с услугами, командой и клиентами студии
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+    padding-bottom: 94px;
+  }
+}
+
+// Стилизирует h2-заголовок секции с услугами
 .services-title {
   margin-top: 0;
   margin-bottom: 50px;

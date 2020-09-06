@@ -11,11 +11,16 @@
 // Добавляет глобальный border-box
 html {
   box-sizing: border-box;
+  // Аутлайн для адаптивной верстки
+  outline: 2px solid tomato;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  // Аутлайн для адаптивной верстки
+  outline: 2px solid tomato;
 }
 // Добавляет шрифт Roboto всей странице
 body {
@@ -27,11 +32,23 @@ body {
 .container,
 .hero-container,
 .footer-container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 img {
   display: block;
