@@ -1169,6 +1169,8 @@ p {
 @media screen and (max-width: 767.9px) {
   .footer-container {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     justify-content: space-evenly;
   }
 }
@@ -1179,8 +1181,6 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    padding-left: 76px;
-    padding-right: 90px;
   }
 }
 
@@ -1206,7 +1206,20 @@ p {
 @media screen and (max-width: 1199.9px) {
   .logo-address,
   .join-us {
+    width: 50%;
     margin-bottom: 60px;
+  }
+}
+
+.join-socials {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .join-socials {
+    justify-content: start;
   }
 }
 
@@ -1250,30 +1263,21 @@ address {
 
 @media screen and (max-width: 1199.9px) {
   .subscribe {
-    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .join-title,
-  .subscribe-title {
+  .subscribe-title,
+  .logo-address {
     text-align: start;
-  }
-}
-
-.join-us,
-.subscribe {
-  align-items: baseline;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer > div:last-child {
-    width: calc(50% - 15px);
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

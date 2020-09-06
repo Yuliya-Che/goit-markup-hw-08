@@ -16,6 +16,8 @@ p {
 
   @media screen and (max-width: 767.9px) {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     justify-content: space-evenly;
   }
 
@@ -24,9 +26,6 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-
-    padding-left: 76px;
-    padding-right: 90px;
   }
 }
 .footer-container > div:not(:last-child) {
@@ -46,7 +45,17 @@ p {
 .join-us {
   display: block;
   @media screen and (max-width: 1199.9px) {
+    width: 50%;
     margin-bottom: 60px;
+  }
+}
+
+.join-socials {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  @include for-size(desktop) {
+    justify-content: start;
   }
 }
 // Убирает курсив в адресе
@@ -90,29 +99,20 @@ address {
 
 .subscribe {
   @media screen and (max-width: 1199.9px) {
-    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
   }
 }
 
 .join-title,
-.subscribe-title {
+.subscribe-title,
+.logo-address {
   @media screen and (min-width: 1200px) {
     text-align: start;
-  }
-}
-
-.join-us,
-.subscribe {
-  align-items: baseline;
-}
-
-.footer > div:last-child {
-  @include for-size(desktop) {
-    width: calc(50% - 15px);
   }
 }
