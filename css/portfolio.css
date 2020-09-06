@@ -1050,13 +1050,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .projects-item:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.9px) {
-  .projects-item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+    margin-right: 0px;
   }
 }
 
@@ -1181,6 +1175,7 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .footer-container {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
