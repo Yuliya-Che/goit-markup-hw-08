@@ -888,13 +888,13 @@ textarea {
   }
 }
 
-.item {
+.filter-item {
   margin-right: 8px;
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .item {
+  .filter-item {
     margin-bottom: 0;
   }
 }
